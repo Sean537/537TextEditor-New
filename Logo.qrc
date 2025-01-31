@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>537TextEditor_Logo.ico</file>
+    </qresource>
+</RCC>
