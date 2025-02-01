@@ -29,7 +29,27 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    ../537TextEditor_Logo.ico
+    ../537TextEditor_Logo.ico \
+    README.md
 
 RESOURCES += \
     Logo.qrc
+
+#程序图标
+RC_ICONS = 537TextEditor_Logo.ico
+
+# 版本信息
+VERSION = 3.0.0.0
+
+# 产品名称
+QMAKE_TARGET_PRODUCT = "537 Text Editor"
+
+# 文件说明
+QMAKE_TARGET_DESCRIPTION = "537 Text Editor - Think Different"
+
+# 版权信息
+QMAKE_TARGET_COPYRIGHT = "Copyright (C) 2023-2025 537 Studio. All rights reserved."
+
+# 中文（简体）
+RC_LANG = 0x0804
+
