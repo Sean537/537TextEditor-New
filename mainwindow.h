@@ -5,6 +5,7 @@
 #include <QDialog>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QPlainTextEdit>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -21,16 +22,18 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
-
     void on_actionAbout_triggered();
 
     void on_actionExit_triggered();
 
     void on_actionOpen_triggered();
 
+
 private:
     Ui::MainWindow *ui;
+    QLabel *currentFile;
+
+    void initUI();
 
 };
 
